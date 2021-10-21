@@ -1,4 +1,5 @@
 import Nav from './components/resusable/Nav';
+import Home from './components/Home'
 
 
 import './App.css';
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <h1>This is a blog website</h1>
+      <Home/>
     </div>
   );
 }

@@ -1,0 +1,32 @@
+.Hero{
+    width:80%;
+    margin:auto;
+    margin-top:30px;
+    height:500px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+.hero-intro{
+    width:50%;
+}
+.hero-illustration{
+   width:50%;
+   height: 100%;
+   display: grid;
+   place-content: center;
+   position: relative;
+}
+.person{
+    height:300px;
+    z-index: 2;
+}
+.circle{
+    background: #FDF8EA;
+    position: absolute;
+    top:15%;
+    left:30%;
+    height:270px;
+    width:270px;
+    border-radius: 50%;
+}
