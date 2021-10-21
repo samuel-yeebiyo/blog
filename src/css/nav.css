@@ -1,0 +1,26 @@
+.nav-bar{
+    width:80%;
+    margin:auto;
+    display:flex;
+    max-width:1900px;
+    padding-top:30px;
+    position:relative;
+}
+.logo{
+    font-size:34px;
+    position:absolute;
+}
+.nav-menu{
+    width:100%;
+    display: grid;
+    place-content: center;
+    height:44px;
+}
+.nav-menu ul{
+    display:flex;
+}
+.nav-menu li{
+    list-style: none;
+    font-weight: bold;
+    margin: 0 40px 0 40px;
+}
