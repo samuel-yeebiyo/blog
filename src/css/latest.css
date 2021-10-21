@@ -1,0 +1,12 @@
+.Latest{
+    background: #2C2C2C;
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0 20px 0;
+}
+.title{
+    margin-bottom:60px;
+}

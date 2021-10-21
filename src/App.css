@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-
 .App{
-    background:#1D1D1D;
-    height:100vh;
-    width:100%;
-    color:white;
-    font-family: 'Montserrat', sans-serif;
+    min-height:100%;
+    display: flex;
+    flex-direction:column;
+}
+.main-container{
+    margin-bottom:50px;
+    
 }

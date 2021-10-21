@@ -1,0 +1,25 @@
+.Footer{
+    width:100%;
+    background: #FDF8EA;
+    color:black;
+    height:50px;
+    margin-top:auto;
+}
+.footer-content{
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.footer-links{
+    display: flex;
+}
+.div{
+    border:1px solid black;
+    width:0.5px;
+}
+.space{
+    margin-left:15px;
+}

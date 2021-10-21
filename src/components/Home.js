@@ -1,4 +1,5 @@
 import Hero from '../components/Hero'
+import Latest from './Latest'
 
 import '../css/home.css'
 
@@ -13,6 +14,7 @@ const Home = () => {
                     <div className="dot"></div>
                 </div>
             </div>
+            <Latest/>
         </div>
     )
 }

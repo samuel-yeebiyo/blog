@@ -1,6 +1,6 @@
 .nav-bar{
     width:80%;
-    margin:auto;
+    margin:0 auto 0 auto;
     display:flex;
     max-width:1900px;
     padding-top:30px;
@@ -22,5 +22,5 @@
 .nav-menu li{
     list-style: none;
     font-weight: bold;
-    margin: 0 40px 0 40px;
+    margin: 0 25px 0 25px;
 }
