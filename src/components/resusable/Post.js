@@ -12,7 +12,7 @@ const Blog = () => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch('http://localhost:8080/get').then( async (res)=> {
+            await fetch('http://192.168.10.159:5000/get').then( async (res)=> {
             
             let data = await res.text()
             console.log("Fetched: ", data)
@@ -34,7 +34,17 @@ const Blog = () => {
 
     return (
         <div className="Post">
-            <div className="post-image"></div>
+            <div className="post-image">
+                <div className="overlay">
+                    <div className="post-data">
+                        <h1>This is the title for the blog, This is quite long hmm</h1>
+                        <p>21 October, 9:00PM</p>
+                        <br/>
+                        <p>React // JavaScript // Projects</p>
+                    </div>
+                </div>
+                <img src="http://192.168.10.159:5000/static/temp.jpg" />
+            </div>
             <div className="post-content">
                 <p>This is a blog 1</p>
                 <MarkDown>
