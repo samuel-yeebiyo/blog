@@ -3,7 +3,12 @@ import '../../css/card.css'
 const Card = () => {
     return (
         <div className="Card">
-            This is a card
+            <div className="card-image">
+            
+            </div>
+            <div className="card-description">
+            
+            </div>
         </div>
     )
 }

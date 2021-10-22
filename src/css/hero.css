@@ -1,31 +1,35 @@
 .Hero{
-    width:80%;
-    margin:auto;
+    width:100%;
     margin-top:30px;
     height:500px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .hero-intro{
-    width:50%;
+    width:45%;
 }
 .hero-illustration{
    width:50%;
    height: 100%;
    display: grid;
    place-content: center;
-   position: relative;
+}
+.illustration{
+    position: relative;
+    max-width:200px;
+    height:100%;
+    display: flex;
 }
 .person{
-    height:300px;
+    width:100%;
     z-index: 2;
 }
 .circle{
     background: #FDF8EA;
     position: absolute;
-    top:15%;
-    left:30%;
-    height:270px;
-    width:270px;
+    height:250px;
+    width:250px;
+    right:5px;
     border-radius: 50%;
 }

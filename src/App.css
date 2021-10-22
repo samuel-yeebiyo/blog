@@ -5,5 +5,7 @@
 }
 .main-container{
     margin-bottom:50px;
-    
+    width:80%;
+    max-width:1900px;
+    margin: 0 auto 60px auto;
 }

@@ -8,6 +8,8 @@ const Latest = () => {
             <h3 className="title">Latest Articles 👇!</h3>
             <Card/>
             <Card/>
+            <Card/>
+            <Card/>
         </div>
     )
 }

@@ -12,8 +12,10 @@ const Hero = () => {
                 I am in no way an experienced expert but I hope I can impart some of my knowledge to someone out there that is looking for answers.</p>
             </div>
             <div className="hero-illustration">
-                <img className="person" src={Illustration}></img>
-                <div className="circle"></div>
+                <div className="illustration">
+                    <img className="person" src={Illustration} alt="open-peeps: amiling while holding a cup"></img>
+                    <div className="circle"></div>
+                </div>
             </div>
         </div>
     )
