@@ -1,0 +1,10 @@
+.post-image{
+    width:100%;
+    height:420px;
+    background: white;
+    position:relative;
+}
+.post-content{
+    width:50%;
+    margin: 30px auto 20px auto;
+}
