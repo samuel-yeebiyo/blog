@@ -30,6 +30,7 @@
     position: absolute;
     height:250px;
     width:250px;
-    right:5px;
+    right:-5px;
+    top:-10px;
     border-radius: 50%;
 }
