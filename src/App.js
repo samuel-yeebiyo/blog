@@ -4,18 +4,42 @@ import Articles from './components/Articles';
 import Post from './components/resusable/Post'
 import Footer from './components/resusable/Footer';
 
-import {Route} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
+import {useEffect, useState} from 'react'
 
 import './App.css';
 
 function App() {
+
+  const [meta, setMeta] = useState([]);
+
+  useEffect(()=>{
+    async function fetchMetaD(){
+      await fetch('http://192.168.10.159:5000/api/get-metadata').then( async (res)=> {
+          
+        res= await res.json()
+        console.log("Fetched: ", res)
+        setMeta(res);
+
+      }).catch(err => console.log(err))
+    }
+
+    fetchMetaD()
+
+  },[])
+
+
   return (
     <div className="App">
       <Nav/>
       <div className="main-container">
-        <Route path="/" exact component={()=> <Home/>}/>
-        <Route path="/articles" exact component={()=> <Articles/>}/>
-        <Route path="/articles/sample" exact component={()=> <Post/>}/>
+        <Route path="/" exact component={()=> <Home meta={meta}/>}/>
+        <Route path="/articles" exact component={()=> <Articles meta={meta}/>}/>
+        {
+          meta.map((item)=>(
+            <Route path={item.path} exact component={()=> <Post hero={item.hero} id={item.id}/>}/>
+          ))
+        }
       </div>
       <Footer/>
     </div>

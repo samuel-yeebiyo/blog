@@ -1,9 +1,12 @@
 .Card{
     height:200px;
     margin-bottom: 80px;
-    display: flex;
     max-width:80%;
-    border:white 1px solid;
+}
+.link{
+    height:100%;
+    width:100%;
+    display: flex;
 }
 .card-image{
     width:350px;

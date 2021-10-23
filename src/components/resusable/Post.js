@@ -4,7 +4,7 @@ import '../../css/post.css'
 import Showdown from 'showdown'
 import MarkDown from 'markdown-to-jsx'
 
-const Blog = () => {
+const Post = ({hero, id}) => {
 
    
     const [content, setContent] = useState('');
@@ -12,10 +12,10 @@ const Blog = () => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch('http://192.168.10.159:5000/get').then( async (res)=> {
+            await fetch(`http://192.168.10.159:5000/api/post/${id}`).then( async (res)=> {
             
             let data = await res.text()
-            console.log("Fetched: ", data)
+            console.log("Fetched content: ", data)
 
             let converter = new Showdown.Converter();
             converter.setOption('simpleLineBreaks', true)
@@ -43,7 +43,7 @@ const Blog = () => {
                         <p>React // JavaScript // Projects</p>
                     </div>
                 </div>
-                <img src="http://192.168.10.159:5000/static/temp.jpg" />
+                <img src={`http://192.168.10.159:5000/${hero}`} />
             </div>
             <div className="post-content">
                 <p>This is a blog 1</p>
@@ -55,4 +55,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default Post
