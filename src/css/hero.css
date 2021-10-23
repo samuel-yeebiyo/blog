@@ -9,6 +9,12 @@
 .hero-intro{
     width:45%;
 }
+.hero-intro h3{
+    font-size:35px;
+}
+.hero-intro p{
+    font-size:21px;
+}
 .hero-illustration{
    width:50%;
    height: 100%;
@@ -17,7 +23,7 @@
 }
 .illustration{
     position: relative;
-    max-width:200px;
+    max-width:250px;
     height:100%;
     display: flex;
 }
@@ -28,8 +34,8 @@
 .circle{
     background: #FDF8EA;
     position: absolute;
-    height:250px;
-    width:250px;
+    height:300px;
+    width:300px;
     right:-5px;
     top:-10px;
     border-radius: 50%;

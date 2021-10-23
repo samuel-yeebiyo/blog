@@ -26,17 +26,10 @@
 }
 .nav-menu a{
     margin: 0 25px 0 25px;
-    position:relative;
+    text-decoration: none;
 }
-.nav-menu a::after{
-    content:'';
-    background: white;
-    height:3px;
-    border-radius:10px;
-    width:100%;
-    position:absolute;
-}
-.nav-menu li:hover, .nav-menu a::after:hover{
-    transition: color 0.5s ease-in;
-    background-color:red;
+
+.nav-menu li:hover{
+    transition: color 0.1s ease-in;
+    color:#B07F50;
 }

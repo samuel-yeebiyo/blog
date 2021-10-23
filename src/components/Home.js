@@ -3,7 +3,7 @@ import Latest from './Latest'
 
 import '../css/home.css'
 
-const Home = () => {
+const Home = ({meta}) => {
     return (
         <div className="Home">
             <Hero/>
@@ -14,7 +14,7 @@ const Home = () => {
                     <div className="dot"></div>
                 </div>
             </div>
-            <Latest/>
+            <Latest meta={meta}/>
         </div>
     )
 }
