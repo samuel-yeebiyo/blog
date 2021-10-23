@@ -12,7 +12,7 @@ const Post = ({hero, id}) => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch(`http://192.168.10.159:5000/api/post/${id}`).then( async (res)=> {
+            await fetch(`http://192.168.137.1:5000/api/post/${id}`).then( async (res)=> {
             
             let data = await res.text()
             console.log("Fetched content: ", data)
@@ -43,7 +43,7 @@ const Post = ({hero, id}) => {
                         <p>React // JavaScript // Projects</p>
                     </div>
                 </div>
-                <img src={`http://192.168.10.159:5000/${hero}`} />
+                <img src={`http://192.168.137.1:5000/${hero}`} />
             </div>
             <div className="post-content">
                 <p>This is a blog 1</p>

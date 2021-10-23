@@ -1,0 +1,84 @@
+.About{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    max-width:1710px;
+}
+.about-me{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:130px;
+    position:relative;
+}
+.about-hero{
+    height:100%;
+    width:100%;
+    position:absolute;
+    overflow:hidden;
+    z-index:-4;
+}
+.about-hero img{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me h2{
+    margin-bottom:30px;
+}
+.me-content{
+    display: flex;
+    justify-content: center;
+}
+.me-content div{
+    height:300px;
+    width:250px;
+    background: white;
+    margin-right:50px;
+    background:url('../about-img.jpg');
+    object-fit: contain;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.me-content p{
+    width:45%;
+    border-bottom: 0.5px solid white;
+    line-height:185%;
+}
+.about-blogs{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin-bottom:130px;
+}
+.about-blogs h2{
+    align-self:left;
+    margin-bottom:40px;
+}
+.about-blogs p{
+    line-height: 200%;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    align-self: center;
+    max-width:1100px;
+}
+.about-content h2{
+    align-self:center;
+    margin-bottom: 50px;;
+}
+.about-content div{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.about-content p{
+    width:200px;
+    text-align: center;
+}
