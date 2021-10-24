@@ -10,7 +10,7 @@ const Articles = ({meta}) => {
         <div className="Articles">
             <div className="articles-desc">
                 <h3>Articles 📰</h3>
-                <p>Hope you find something useful</p>
+                <p>Hope you find something useful!</p>
             </div>
             {meta &&
                 meta.map((item)=>(

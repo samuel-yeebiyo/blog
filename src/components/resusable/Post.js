@@ -4,7 +4,7 @@ import '../../css/post.css'
 import Showdown from 'showdown'
 import MarkDown from 'markdown-to-jsx'
 
-const Post = ({hero, id}) => {
+const Post = ({hero, id, meta}) => {
 
    
     const [content, setContent] = useState('');
@@ -12,17 +12,12 @@ const Post = ({hero, id}) => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch(`http://192.168.137.1:5000/api/post/${id}`).then( async (res)=> {
+            await fetch(`http://192.168.10.159:5000/api/post/${id}`).then( async (res)=> {
             
             let data = await res.text()
-            console.log("Fetched content: ", data)
-
             let converter = new Showdown.Converter();
             converter.setOption('simpleLineBreaks', true)
             let html = converter.makeHtml(data);
-
-            console.log("Converted: ",html)
-
             setContent(html)
 
             }).catch(err => console.log(err))
@@ -33,20 +28,22 @@ const Post = ({hero, id}) => {
     },[])
 
     return (
-        <div className="Post">
+        <div id="post" className="Post">
             <div className="post-image">
                 <div className="overlay">
                     <div className="post-data">
-                        <h1>This is the title for the blog, This is quite long hmm</h1>
-                        <p>21 October, 9:00PM</p>
+                        <p className="post-date">{meta.date}</p>
+                        <h1 className="post-title">{meta.title}</h1>
                         <br/>
-                        <p>React // JavaScript // Projects</p>
+                        <p className="post-tags">{
+                            meta.tags.map((item)=>(<span>{item} // </span>))
+                        }
+                        </p>
                     </div>
                 </div>
-                <img src={`http://192.168.137.1:5000/${hero}`} />
+                <img src={`http://192.168.10.159:5000/${hero}`} />
             </div>
             <div className="post-content">
-                <p>This is a blog 1</p>
                 <MarkDown>
                     {content}
                 </MarkDown>

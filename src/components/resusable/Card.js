@@ -7,13 +7,13 @@ const Card = ({ path, image, title, description, date}) => {
     return (
         <div className="Card">
             <Link to={`${path}`} className="link">
-                <div className="card-image" style={{background:`url(http://192.168.137.1:5000/${image})`, objectFit:"contain", backgroundSize:"cover"}}>
+                <div className="card-image" style={{background:`url(http://192.168.10.159:5000/${image})`, objectFit:"contain", backgroundSize:"cover"}}>
                 </div>
                 <div className="card-description">
                     <div className="desc">
                         <h2>{title}</h2>
                         <p>{description}</p>
-                    </div><div className="post-date">
+                    </div><div className="card-date">
                         <p>{date}</p>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ const Latest = ({meta}) => {
 
     return (
         <div className="Latest">
-            <h3 className="title">Latest Articles 👇!</h3>
+            <h3 className="title">Latest Articles 👇</h3>
             {meta &&
                 meta.map((item, index)=>{
                     if(index <4){

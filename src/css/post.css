@@ -29,6 +29,19 @@
     flex-direction: column;
     justify-content: center;
 }
+.post-title{
+    font-weight: 800;
+    font-size: 34px;
+    margin-top:5px;
+    line-height:95%;
+}
+.post-date{
+    font-size:14px;
+    letter-spacing: 0.8px;
+}
+.post-tags{
+    font-size:14px;
+}
 .post-content{
     width:65%;
     max-width:650px;

@@ -6,7 +6,9 @@ const Nav = ()=> {
     return (
         <div className="nav-bar">
             <div className="logo">
-                <p>Blogs.AM</p>
+                <Link to='/'>
+                    <p>Blogs.AM</p>
+                </Link>
             </div>
             <div className="nav-menu">
                 <ul>

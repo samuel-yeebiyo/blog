@@ -4,7 +4,15 @@
     max-width:80%;
     border-radius:5px;
     overflow: hidden;
-    box-shadow: 10px 10px 20px 1px black;
+    box-shadow: 5px 5px 10px 1px black;
+    position:relative;
+    transition:bottom 0.2s, right 0.2s;
+    bottom:0;
+    right:0;
+}
+.Card:hover{
+    bottom:5px;
+    right:5px;
 }
 .Card a{
     text-decoration: none;
@@ -24,14 +32,19 @@
     width:550px;
     height:100%;
     background: #FDF8EA;
-    padding:15px 12px 15px 12px;
+    padding:20px 15px 20px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .desc h2{
     margin-bottom:10px;
+    font-size:21px;
 }
-.post-date{
+.desc p{
+    line-height:150%;
     font-size:15px;
+}
+.card-date{
+    font-size:14px;
 }
