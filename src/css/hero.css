@@ -1,6 +1,6 @@
 .Hero{
-    width:100%;
-    margin-top:30px;
+    width:80%;
+    margin:30px auto 0 auto;
     height:500px;
     display: flex;
     align-items: center;

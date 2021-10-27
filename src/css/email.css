@@ -1,0 +1,65 @@
+.Email{
+    width:70%;
+    background:#2C2C2C;
+    margin:30px auto 30px auto;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email-soon{
+    margin:50px 0 50px 0;
+    font-weight: 700;
+    font-size: 27px;
+}
+.email-main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:60px;
+}
+.email-illustration{
+    height:300px;
+    margin-bottom:50px;
+}
+.dog-call{
+    height:100%;
+}
+.email-info{
+    width:55%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email-info p{
+    margin-bottom:60px;
+    text-align: center;
+    line-height: 150%;
+    font-weight:600;
+}
+.email-info input{
+    height:45px;
+    width:350px;
+    font-size:0.9em;
+    font-weight: 600;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right:20px;
+    border: none;
+}
+.email-info button{
+    height:45px;
+    width:100px;
+    font-size:0.9em;
+    font-weight: 600;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    background-color: #1c1c1c;
+    border:none;
+    transition: all 0.1s ease-in;
+}
+.email-info button:hover{
+    background-color: #FDF8EA;
+    color:black;
+    cursor:pointer;
+}

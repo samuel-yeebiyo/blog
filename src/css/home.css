@@ -1,10 +1,10 @@
 .Home{
-    width:80%;
+    width:100%;
     max-width:1900px;
 }
 .divider{
     width:80%;
-    margin:30px auto 30px auto;
+    margin:30px auto 50px auto;
     display: grid;
     place-content: center;
 }
@@ -12,8 +12,8 @@
     display: flex;
 }
 .dot{
-    height:15px;
-    width:15px;
+    height:10px;
+    width:10px;
     border-radius: 50%;
     background: white;
     margin: 0 5px 0 5px;

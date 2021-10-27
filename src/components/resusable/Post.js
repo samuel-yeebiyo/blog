@@ -4,6 +4,8 @@ import '../../css/post.css'
 import Showdown from 'showdown'
 import MarkDown from 'markdown-to-jsx'
 
+import Email from './Email'
+
 const Post = ({hero, id, meta}) => {
 
    
@@ -48,6 +50,14 @@ const Post = ({hero, id, meta}) => {
                     {content}
                 </MarkDown>
             </div>
+            <div className="divider">
+                <div className="dots">
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                </div>
+            </div>
+            <Email/>
         </div>
     )
 }

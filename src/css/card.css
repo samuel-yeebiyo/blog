@@ -4,15 +4,15 @@
     max-width:80%;
     border-radius:5px;
     overflow: hidden;
-    box-shadow: 5px 5px 10px 1px black;
     position:relative;
-    transition:bottom 0.2s, right 0.2s;
+    transition:all 0.2s, right 0.2s;
     bottom:0;
     right:0;
 }
 .Card:hover{
     bottom:5px;
     right:5px;
+    box-shadow: 5px 5px 10px 1px black;
 }
 .Card a{
     text-decoration: none;
