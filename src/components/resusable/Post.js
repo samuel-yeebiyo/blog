@@ -43,7 +43,7 @@ const Post = ({hero, id, meta}) => {
                         </p>
                     </div>
                 </div>
-                <img src={`http://192.168.10.159:5000/${hero}`} />
+                <img src={`${hero}`} />
             </div>
             <div className="post-content">
                 <MarkDown>
