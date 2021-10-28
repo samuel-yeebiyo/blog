@@ -13,9 +13,9 @@ const Articles = ({meta}) => {
                 <p>Hope you find something useful!</p>
             </div>
             {meta &&
-                meta.map((item)=>(
-                    <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
-                ))
+                meta.map((item)=>{
+                    return <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
+                })
             }
         </div>
     )

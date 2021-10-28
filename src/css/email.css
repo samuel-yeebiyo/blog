@@ -38,7 +38,7 @@
 }
 .email-info input{
     height:45px;
-    width:350px;
+    width:300px;
     font-size:0.9em;
     font-weight: 600;
     padding:10px;
@@ -62,4 +62,30 @@
     background-color: #FDF8EA;
     color:black;
     cursor:pointer;
+}
+.email-form{
+    display: flex;
+    max-width:90%
+}
+
+
+@media (max-width: 800px){
+    .email-illustration{
+        height:200px;
+    }
+    .email-info{
+        width:80%
+    }
+}
+
+@media (max-width:600px){
+    .Email{
+        width:100%;
+    }
+    .email-info{
+        width:85%
+    }
+    .email-info p{
+        font-size:14px;
+    }
 }

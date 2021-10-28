@@ -6,7 +6,7 @@
     margin-top:auto;
 }
 .footer-content{
-    width:80%;
+    width:90%;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -23,4 +23,20 @@
 }
 .space{
     margin-left:15px;
+}
+
+@media (max-width:600px){
+    .Footer{
+        height:auto;
+    }
+    .footer-content{
+        flex-direction: column;
+        margin:30px auto 30px auto;
+    }
+    .footer-content > p{
+        margin-bottom:30px;
+    }
+    .footer-links p{
+        font-size:12px;
+    }
 }

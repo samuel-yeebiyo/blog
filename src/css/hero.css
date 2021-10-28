@@ -1,6 +1,6 @@
 .Hero{
     width:80%;
-    margin:30px auto 0 auto;
+    margin:50px auto 0 auto;
     height:500px;
     display: flex;
     align-items: center;
@@ -39,4 +39,51 @@
     right:-5px;
     top:-10px;
     border-radius: 50%;
+}
+
+@media (max-width: 800px){
+    .hero-intro p{
+        font-size: 16px;
+    }
+    .hero-illustration{
+        width:35%;
+    }
+    .circle{
+        height:250px;
+        width:250px;
+    }
+}
+
+@media (max-width:600px){
+    .Hero{
+        position:relative;
+        height:300px;
+        align-items: flex-end;
+        width:85%
+    }
+    .hero-intro{
+        width:100%;
+        padding-bottom:20px;
+    }
+    .hero-intro h3{
+        font-size: 21px;
+        padding-bottom:60px;
+    }
+    .hero-intro p{
+        font-size:14px;
+    }
+    .hero-illustration{
+        position:absolute;
+        right:0;
+        top:0px;
+        width:25%;
+        height: auto;
+        transform:translateX(-50%)
+    }
+    .person{
+        width:90%;
+    }
+    .circle{
+        display: none;
+    }
 }

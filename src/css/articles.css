@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     margin-top:50px;
-    width:80%;
+    width:100%;
     max-width:1900px;
 }
 .articles-desc{
     margin-bottom:20px;
     text-align: center;
 }
-.articles-desc h3, .articles-desc p{
+.articles-desc > h3, .articles-desc > p{
     margin-bottom:30px;
 }

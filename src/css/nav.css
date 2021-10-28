@@ -16,8 +16,9 @@
 }
 .nav-menu{
     width:100%;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     height:44px;
 }
 .nav-menu ul{
@@ -36,4 +37,33 @@
 .nav-menu li:hover{
     transition: color 0.1s ease-in;
     color:#B07F50;
+}
+
+@media (max-width:800px){
+    .nav-menu{
+        justify-content: right;
+    }
+    .nav-menu a{
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media (max-width:600px){
+    .nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        position:static;
+    }
+    .nav-menu ul{
+       justify-content: center;
+       align-items: center;
+       font-size:14px;
+    }
+    .nav-menu{
+        justify-content: center;
+        margin-top:10px;
+    }
 }
