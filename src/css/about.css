@@ -105,10 +105,35 @@
 }
 
 @media (max-width:600px){
+    .About{
+        margin-bottom:50px;
+    }
+    .me-content p{
+        width:100%;
+    }
     .about-content{
         width:100%;
     }
     .about-content p{
         font-size: 12px;
+    }
+}
+
+@media (max-width:400px){
+    .about-content h2{
+        font-size:19px;
+    }
+    .about-content p{
+        font-size:10px;
+    }
+}
+
+@media (max-width:300px){
+    .about-content div{
+        flex-wrap: wrap;
+        margin: 20px 0px;
+    }
+    .about-content p{
+        margin-bottom:10px;
     }
 }

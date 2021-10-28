@@ -10,9 +10,9 @@
     position:relative;
 }
 .post-image img{
-    object-fit: contain;
+    object-fit: cover;
     width:100%;
-    height: auto;
+    height: 100%;
 }
 .overlay{
     background:rgba(0,0,0,0.7);
@@ -107,6 +107,9 @@
 }
 
 @media (max-width:600px){
+    .post-title{
+        font-size:26px;
+    }
     .post-data{
         width:80%;
     }
@@ -117,5 +120,33 @@
     .post-content caption{
         width:100%;
         font-size:14px;
+    }
+    .post-date{
+        font-size:12px;
+    }
+    .post-tags{
+        font-size: 12px;
+    }
+    .post-content p, .post-content pre{
+        font-size:14px;
+    }
+}
+
+@media (max-width:300px){
+    .post-title{
+        font-size:16px;
+    }
+    .post-date{
+        font-size:10px;
+    }
+    .post-tags{
+        font-size: 10px;
+    }
+    .post-content caption{
+        width:100%;
+        font-size:12px;
+    }
+    .post-content p, .post-content pre{
+        font-size:12px;
     }
 }

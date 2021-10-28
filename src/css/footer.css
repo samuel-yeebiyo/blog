@@ -28,6 +28,7 @@
 @media (max-width:600px){
     .Footer{
         height:auto;
+        margin-top:0;
     }
     .footer-content{
         flex-direction: column;

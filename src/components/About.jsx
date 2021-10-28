@@ -37,7 +37,7 @@ const About = () => {
                     <p>Heroku</p> 
                 </div>
                 <div>
-                    <p>And more...</p>
+                    <p style={{fontWeight:700, fontSize:'21px'}}>And more...</p>
                 </div>
             </div>
         </div>

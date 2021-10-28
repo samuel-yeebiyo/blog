@@ -1,7 +1,7 @@
 .Email{
     width:70%;
     background:#2C2C2C;
-    margin:30px auto 30px auto;
+    margin:30px auto 0px auto;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -36,7 +36,7 @@
     line-height: 150%;
     font-weight:600;
 }
-.email-info input{
+.email-form input{
     height:45px;
     width:300px;
     font-size:0.9em;
@@ -46,7 +46,7 @@
     margin-right:20px;
     border: none;
 }
-.email-info button{
+.email-form button{
     height:45px;
     width:100px;
     font-size:0.9em;
@@ -87,5 +87,13 @@
     }
     .email-info p{
         font-size:14px;
+    }
+    .email-form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-form input{
+        margin: 0 0 30px 0;
+        width:100%;
     }
 }

@@ -41,10 +41,7 @@
     border-radius: 50%;
 }
 
-@media (max-width: 800px){
-    .hero-intro p{
-        font-size: 16px;
-    }
+@media (max-width:1025px){
     .hero-illustration{
         width:35%;
     }
@@ -54,12 +51,26 @@
     }
 }
 
+@media (max-width: 800px){
+    .hero-intro p{
+        font-size: 16px;
+    }
+    .hero-illustration{
+        width:30%;
+    }
+    .circle{
+        height:200px;
+        width:200px;
+    }
+}
+
 @media (max-width:600px){
     .Hero{
         position:relative;
-        height:300px;
-        align-items: flex-end;
-        width:85%
+        height:auto;
+        width:85%;
+        flex-direction:column-reverse;
+        margin-top:30px;
     }
     .hero-intro{
         width:100%;
@@ -67,18 +78,13 @@
     }
     .hero-intro h3{
         font-size: 21px;
-        padding-bottom:60px;
     }
     .hero-intro p{
         font-size:14px;
     }
     .hero-illustration{
-        position:absolute;
-        right:0;
-        top:0px;
-        width:25%;
-        height: auto;
-        transform:translateX(-50%)
+        width:35%;
+        margin-bottom:30px;
     }
     .person{
         width:90%;
