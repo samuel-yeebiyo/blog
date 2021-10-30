@@ -2,8 +2,11 @@
     width:100%;
     background: #FDF8EA;
     color:black;
-    height:50px;
+    height:100px;
     margin-top:auto;
+}
+.footer-logo{
+    height:80%;
 }
 .footer-content{
     width:90%;
@@ -29,6 +32,11 @@
     .Footer{
         height:auto;
         margin-top:0;
+    }
+    .footer-logo{
+        width:35%;
+        height:auto;
+        margin-bottom:20px;
     }
     .footer-content{
         flex-direction: column;

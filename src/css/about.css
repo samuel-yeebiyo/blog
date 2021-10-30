@@ -107,6 +107,7 @@
 @media (max-width:600px){
     .About{
         margin-bottom:50px;
+        width:85%;
     }
     .me-content p{
         width:100%;

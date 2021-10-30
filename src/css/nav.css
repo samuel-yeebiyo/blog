@@ -3,16 +3,22 @@
     margin:0 auto 0 auto;
     display:flex;
     max-width:1900px;
-    padding-top:30px;
+    margin-top:30px;
     position:relative;
+    height:75px;
+    align-items: center;
 }
 .logo{
-    font-size:34px;
     position:absolute;
+    height:100%;
+    top:0;
 }
 .logo a{
     text-decoration: none;
     color:white;
+}
+.main-logo{
+    height:100%;
 }
 .nav-menu{
     width:100%;
@@ -32,6 +38,24 @@
 .nav-menu a{
     margin: 0 25px 0 25px;
     text-decoration: none;
+    position:relative;
+}
+
+.nav-menu a::after{
+    content: '';
+    position:absolute;
+    background: #B07F50;
+    left:0;
+    bottom:-5px;
+    border-bottom:1px solid #B07F50;
+    height:1px;
+    width: 0%;
+    transition: width 0.3s ease;
+
+}
+
+.nav-menu a:hover:after{
+    width:100%;
 }
 
 .nav-menu li:hover{
@@ -53,9 +77,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom:25px;
     }
     .logo{
         position:static;
+        margin-bottom:10px;
     }
     .nav-menu ul{
        justify-content: center;

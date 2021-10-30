@@ -1,4 +1,5 @@
 import '../../css/nav.css'
+import Logo from '../../Asset 1@2x.png'
 
 import { Link } from 'react-router-dom'
 
@@ -7,7 +8,7 @@ const Nav = ()=> {
         <div className="nav-bar">
             <div className="logo">
                 <Link to='/'>
-                    <p>Blogs.AM</p>
+                    <img className="main-logo" src={Logo} alt="logo image" />
                 </Link>
             </div>
             <div className="nav-menu">

@@ -1,11 +1,12 @@
 import '../../css/footer.css'
+import Logo from '../../Asset 4@2x.png'
 
 
 const Footer = () => {
     return (
         <div className="Footer">
            <div className="footer-content">
-                <p>Blogs.AM</p>
+                <img className="footer-logo" src={Logo} alt="logo image" />
                 <div className="footer-links">
                     <p>Privacy Policy</p>
                     <span className="div space"/>
