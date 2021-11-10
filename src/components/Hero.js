@@ -1,5 +1,5 @@
 import '../css/hero.css'
-import Illustration from '../Introduction@2x.png'
+import Illustration from '../assets/person.png'
 
 const Hero = () => {
     return (

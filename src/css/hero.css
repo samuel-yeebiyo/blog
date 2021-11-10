@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width:1700px;
 }
 .hero-intro{
     width:45%;

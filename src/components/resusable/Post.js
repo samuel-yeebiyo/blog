@@ -2,7 +2,8 @@ import { useEffect, useState} from 'react'
 
 import '../../css/post.css'
 import Showdown from 'showdown'
-import MarkDown from 'markdown-to-jsx'
+import MarkDown from '../utils/Markdown'
+
 
 import Email from './Email'
 
@@ -20,7 +21,7 @@ const Post = ({hero, id, meta}) => {
             let converter = new Showdown.Converter();
             converter.setOption('simpleLineBreaks', true)
             let html = converter.makeHtml(data);
-            setContent(html)
+            setContent(data)
 
             }).catch(err => console.log(err))
         }
@@ -46,9 +47,7 @@ const Post = ({hero, id, meta}) => {
                 <img src={`${hero}`} />
             </div>
             <div className="post-content">
-                <MarkDown>
-                    {content}
-                </MarkDown>
+                <MarkDown content={content}/>
             </div>
             <div className="divider">
                 <div className="dots">

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../css/email.css'
 
-import Image from '../../Dog call@2x.png'
+import Image from '../../assets/email.png'
 
 const Email = () => {
     return (

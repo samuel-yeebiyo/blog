@@ -8,7 +8,7 @@ import Footer from './components/resusable/Footer';
 import {Route, Link} from 'react-router-dom'
 import {useEffect, useState} from 'react'
 
-import './App.css';
+import './css/App.css';
 
 function App() {
 
