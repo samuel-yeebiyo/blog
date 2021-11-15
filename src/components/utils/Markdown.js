@@ -31,7 +31,7 @@ const Markdown = ({content}) =>{
                     const lang = className ? className.replace("language-", "") : "bash"
                     return (
                         <div className="code" style={{textAlign:"center", width:"100%"}}>
-                            <div style={{background:"#2d2d2d", width:"100%", color:"rgba(255,255,255,0.50)", borderRadius:"7px 7px 0 0"}}>{lang}</div>
+                            <div className="lang">{lang}</div>
                             <SyntaxHighlighter style={theme} language={lang}>
                                 {children[0]}
                             </SyntaxHighlighter>

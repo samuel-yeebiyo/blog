@@ -34,7 +34,8 @@
     width:550px;
     height:auto;
     min-height:200px;
-    background: #FDF8EA;
+    /* background: #FDF8EA; */
+    background:white;
     padding:20px 15px 20px 15px;
     display: flex;
     flex-direction: column;
@@ -55,6 +56,7 @@
 @media (max-width: 800px){
     .Card{
         height:190px;
+        width:80%;
     }
     .desc h2{
         font-size: 16px;

@@ -15,7 +15,7 @@ const Post = ({hero, id, meta}) => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch(`http://192.168.10.159:5000/api/post/${id}`).then( async (res)=> {
+            await fetch(`http://192.168.8.108:5000/api/post/${id}`).then( async (res)=> {
             
             let data = await res.text()
             let converter = new Showdown.Converter();
@@ -30,12 +30,13 @@ const Post = ({hero, id, meta}) => {
 
     },[])
 
+
     return (
         <div id="post" className="Post">
             <div className="post-image">
                 <div className="overlay">
                     <div className="post-data">
-                        <p className="post-date">{meta.date}</p>
+                        <p className="post-date">{new Date(meta.date).toDateString()}</p>
                         <h1 className="post-title">{meta.title}</h1>
                         <br/>
                         <p className="post-tags">{
