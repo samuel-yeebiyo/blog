@@ -9,6 +9,7 @@
     background:rgba(0, 0, 0, 0.6);
     overflow: hidden;
     position:relative;
+    min-height:320px;
 }
 .post-image img{
     object-fit: cover;
@@ -45,10 +46,17 @@
 .post-tags{
     font-size:14px;
 }
+.post-tag{
+    background:#f9f9f9;
+    color:black;
+    padding:6px;
+    margin-right:6px;
+    border-radius:2px;
+}
 .post-content{
     width:65%;
     max-width:650px;
-    margin: 30px auto 80px auto;
+    margin: 40px auto 80px auto;
     line-height: 195%;
     padding-right:0px;
 }
@@ -122,6 +130,7 @@
 }
 .postcontent-img + strong{
     text-align: center;
+    font-style: italic;
     width:100%;
     position:absolute;
     transform:translateY(-60px);
@@ -224,7 +233,7 @@
         font-size:12px;
     }
     .post-tags{
-        font-size: 12px;
+        font-size: 10px;
     }
     .post-content p, .post-content pre{
         font-size:14px;

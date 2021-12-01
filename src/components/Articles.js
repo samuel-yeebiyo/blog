@@ -1,8 +1,5 @@
 import Card from "./resusable/Card"
-
 import '../css/articles.css'
-
-import { Link } from "react-router-dom"
 
 const Articles = ({meta}) => {
     
@@ -12,11 +9,16 @@ const Articles = ({meta}) => {
                 <h3>Articles 📰</h3>
                 <p>Hope you find something useful!</p>
             </div>
-            {meta &&
-                meta.map((item)=>{
-                    return <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
-                })
-            }
+            <div className="global-tags">
+
+            </div>
+            <div className="all-articles">
+                {meta &&
+                    meta.map((item)=>{
+                        return <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
+                    })
+                }
+            </div>
         </div>
     )
 }

@@ -13,3 +13,30 @@
 .articles-desc > h3, .articles-desc > p{
     margin-bottom:30px;
 }
+.all-articles{
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    column-gap: 40px;
+    row-gap: 70px;
+    place-content: center;
+    padding:0 50px;
+    margin-bottom:50px;
+}
+@media(max-width:650px){
+    .articles-desc > h3{
+        margin-bottom:20px;
+    }
+    .articles-desc > p{
+        font-size:12px;
+    }
+    .all-articles{
+        width:90%;
+        display: grid;
+        padding:0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        row-gap:50px;
+        margin-bottom:50px;
+    }
+}

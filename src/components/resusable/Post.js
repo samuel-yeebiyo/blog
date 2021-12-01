@@ -40,7 +40,7 @@ const Post = ({hero, id, meta}) => {
                         <h1 className="post-title">{meta.title}</h1>
                         <br/>
                         <p className="post-tags">{
-                            meta.tags.map((item)=>(<span>{item} // </span>))
+                            meta.tags.map((item)=>(<span className="post-tag">{item}</span>))
                         }
                         </p>
                     </div>

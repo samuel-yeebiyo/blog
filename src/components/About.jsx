@@ -7,9 +7,12 @@ const About = () => {
         <div className="About">
             <div className="about-me">
                 <div className="me-content">
-                    <div>
+                    <div className="me-img">
                     </div>
-                    <p> My name is Samuel Yeebiyo, I am a CS student in my final year of my undergraduate program. For the most part I would consider myself a self-taught web developer but I still haven't shaken off my imposter syndrome just yet. Like most self-taught programmers these days, I am beholden to many content creators on YouTube and other platforms that have extensive libraries full of tutorials.</p>
+                    <div className="me-text">
+                        <p> My name is Samuel Yeebiyo, I am a CS student in my final year of my undergraduate program. For the most part I would consider myself a self-taught web developer but I still haven't shaken off my imposter syndrome just yet. Like most self-taught programmers these days, I am beholden to many content creators on YouTube and other platforms that have extensive libraries full of tutorials.</p>
+                        <p>Even though I am completing a four year program, nothing was really covered on the topic of web development so this has given me the experience of being able to motivate and teach myself using all the available online avenues on top of a traditional academic education. </p>
+                    </div>
                 </div>
             </div>
             <div className="about-blogs">
