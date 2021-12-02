@@ -1,8 +1,40 @@
+import { useState, useEffect } from "react"
+
+import { Link } from "react-router-dom"
+
 import Card from "./resusable/Card"
 import '../css/articles.css'
 
 const Articles = ({meta}) => {
+
+    const [tags, setTags]=useState([])
+    const [selectedTag, setSelectedTag]=useState({
+        name:"",
+        id:[]
+    })
+
+    useEffect(()=>{
+        async function fetchTags(){
+          await fetch('http://192.168.8.108:5000/api/get-tags').then( async (res)=> {
+              
+            res= await res.json()
+            console.log("Fetched: ", res)
+            setTags(res);
     
+          }).catch(err => console.log(err))
+        }
+    
+        fetchTags()
+    
+    },[])
+    
+    
+    const selectTag = (tag)=>{
+        if(tag.name == selectedTag.name){
+            setSelectedTag({ name:"",id:[]})
+        }else setSelectedTag(tag);
+    }
+
     return (
         <div className="Articles">
             <div className="articles-desc">
@@ -10,14 +42,32 @@ const Articles = ({meta}) => {
                 <p>Hope you find something useful!</p>
             </div>
             <div className="global-tags">
-
-            </div>
-            <div className="all-articles">
-                {meta &&
-                    meta.map((item)=>{
-                        return <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
+                {tags &&
+                    tags.map((item)=>{
+                        return (
+                            <div tabIndex="-1" className={`global-tag ${selectedTag.name == item.name && "tag-selected"}`} onClick={() => selectTag(item)}>
+                                <p>{item.name}</p>
+                            </div>
+                        )
                     })
                 }
+            </div>
+            <div className="all-articles">
+
+                {selectedTag.id.length > 0 ?
+                    meta &&
+                        meta.map((item)=>{
+                            if(selectedTag.id.includes(item.id))
+                            return <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
+                        })
+                    :
+                    meta &&
+                        meta.map((item)=>{
+                            return <Card path={item.path} title={item.title} image={item.hero} description={item.description} date={item.date}/>
+                        })
+                     
+                }
+
             </div>
         </div>
     )
