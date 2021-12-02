@@ -46,6 +46,9 @@
 .post-tags{
     font-size:14px;
 }
+.post-tag-links{
+    text-decoration: none;
+}
 .post-tag{
     background:#f9f9f9;
     color:black;

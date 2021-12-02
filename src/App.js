@@ -16,7 +16,7 @@ function App() {
 
   useEffect(()=>{
     async function fetchMetaD(){
-      await fetch('http://192.168.8.108:5000/api/get-metadata').then( async (res)=> {
+      await fetch('http://192.168.10.159:5000/api/get-metadata').then( async (res)=> {
           
         res= await res.json()
         console.log("Fetched: ", res)

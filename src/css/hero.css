@@ -53,6 +53,9 @@
 }
 
 @media (max-width: 800px){
+    .hero-intro h3{
+        font-size:30px;
+    }
     .hero-intro p{
         font-size: 16px;
     }

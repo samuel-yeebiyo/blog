@@ -1,34 +1,55 @@
 import { useState, useEffect } from "react"
 
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import Card from "./resusable/Card"
 import '../css/articles.css'
 
-const Articles = ({meta}) => {
+const Articles = ({meta, location, history}) => {
 
     const [tags, setTags]=useState([])
     const [selectedTag, setSelectedTag]=useState({
         name:"",
         id:[]
     })
+    const linkData = useLocation()
 
     useEffect(()=>{
         async function fetchTags(){
-          await fetch('http://192.168.8.108:5000/api/get-tags').then( async (res)=> {
+          await fetch('http://192.168.10.159:5000/api/get-tags').then( async (res)=> {
               
             res= await res.json()
             console.log("Fetched: ", res)
             setTags(res);
+
+            if(linkData.state){
+                let sel;
+                console.log({res})
+                for(let i=0; i<res.length ; i++){
+                    if(res[i].name == linkData.state){
+                        sel = res[i]
+                        break
+                    }
+                }
+                
+                setSelectedTag(sel)
+            }
+
+
     
           }).catch(err => console.log(err))
         }
     
         fetchTags()
+
+       
     
     },[])
     
+
     
+    
+
     const selectTag = (tag)=>{
         if(tag.name == selectedTag.name){
             setSelectedTag({ name:"",id:[]})

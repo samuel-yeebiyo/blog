@@ -1,5 +1,8 @@
 import { useEffect, useState} from 'react'
 
+import { Link } from 'react-router-dom'
+import Articles from '../Articles'
+
 import '../../css/post.css'
 import Showdown from 'showdown'
 import MarkDown from '../utils/Markdown'
@@ -15,7 +18,7 @@ const Post = ({hero, id, meta}) => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch(`http://192.168.8.108:5000/api/post/${id}`).then( async (res)=> {
+            await fetch(`http://192.168.10.159:5000/api/post/${id}`).then( async (res)=> {
             
             let data = await res.text()
             let converter = new Showdown.Converter();
@@ -28,8 +31,16 @@ const Post = ({hero, id, meta}) => {
         
         fetchPost() 
 
+
+
     },[])
 
+    const getLinks = (param)=>{
+        return {
+            pathname: "/articles",
+            state: param
+        }
+    }
 
     return (
         <div id="post" className="Post">
@@ -40,7 +51,12 @@ const Post = ({hero, id, meta}) => {
                         <h1 className="post-title">{meta.title}</h1>
                         <br/>
                         <p className="post-tags">{
-                            meta.tags.map((item)=>(<span className="post-tag">{item}</span>))
+                            meta.tags.map((item)=>(
+                                    <Link to={getLinks(item)} className="post-tag-links">
+                                        <span className="post-tag">{item}</span>
+                                    </Link>
+                                )
+                            )
                         }
                         </p>
                     </div>
