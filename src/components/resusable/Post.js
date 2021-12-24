@@ -1,7 +1,6 @@
 import { useEffect, useState} from 'react'
 
 import { Link } from 'react-router-dom'
-import Articles from '../Articles'
 
 import '../../css/post.css'
 import Showdown from 'showdown'
@@ -18,12 +17,11 @@ const Post = ({hero, id, meta}) => {
     useEffect(()=>{
         
         async function fetchPost(){
-            await fetch(`http://192.168.10.159:5000/api/post/${id}`).then( async (res)=> {
+            await fetch(`http://192.168.8.108:5000/api/post/${id}`).then( async (res)=> {
             
             let data = await res.text()
             let converter = new Showdown.Converter();
             converter.setOption('simpleLineBreaks', true)
-            let html = converter.makeHtml(data);
             setContent(data)
 
             }).catch(err => console.log(err))

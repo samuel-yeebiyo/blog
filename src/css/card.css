@@ -23,12 +23,12 @@
     width:100%;
     background: #1D1D1D;
     min-height: 250px;
-    margin-bottom:200px;
+    margin-bottom:180px;
 }
 .card-description{
     width:90%;
     height:auto;
-    min-height:250px;
+    min-height:230px;
 
     /* background: #FDF8EA; */
 
@@ -81,5 +81,11 @@
     }
     .card-description{
         min-height:200px;
+    }
+    .desc h2{
+        font-size: 16px;
+    }
+    .desc p{
+        font-size:12px;
     }
 }

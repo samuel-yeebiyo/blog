@@ -16,7 +16,7 @@ const Articles = ({meta, location, history}) => {
 
     useEffect(()=>{
         async function fetchTags(){
-          await fetch('http://192.168.10.159:5000/api/get-tags').then( async (res)=> {
+          await fetch('http://192.168.8.108:5000/api/get-tags').then( async (res)=> {
               
             res= await res.json()
             console.log("Fetched: ", res)
